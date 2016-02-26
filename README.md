@@ -24,10 +24,10 @@ ember install:addon ember-maskedinput
 npm install ember-maskedinput --save
 ```
 
-### lazy-image
+### masked-input
 
 ```hbs
-{{maskedinput placeholder="" mask="999 9999" autoclear="false"}}
+{{masked-input placeholder="" mask="999 9999" autoclear="false"}}
 ```
 
 
