@@ -1,6 +1,35 @@
 # ember-maskedinput
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build Status](https://travis-ci.org/systembugtj/ember-maskedinput.svg)](https://travis-ci.org/systembugtj/ember-maskedinput)
+
+`ember-maskedinput` is a component that use jquery.maskedinput to mask the input.
+
+### Installation
+
+From inside your ember-cli project, run the following:
+
+```bash
+ember install ember-maskedinput
+```
+
+#### Installation for ember-cli 0.1.5 - 0.2.2
+
+```bash
+ember install:addon ember-maskedinput
+```
+
+#### Installation without ember-cli
+
+```bash
+npm install ember-maskedinput --save
+```
+
+### lazy-image
+
+```hbs
+{{maskedinput placeholder="" mask="999 9999" autoclear="false"}}
+```
+
 
 ## Installation
 
