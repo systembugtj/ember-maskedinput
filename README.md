@@ -1,4 +1,4 @@
-# Ember-maskinput
+# ember-maskedinput
 
 This README outlines the details of collaborating on this Ember addon.
 
