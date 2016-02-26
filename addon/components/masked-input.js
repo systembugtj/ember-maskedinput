@@ -5,10 +5,18 @@ export default Ember.TextField.extend({
   
   mask: "9999 9999",
   tagName: "input",
-  placeholder: "",
+  placeholder: "-",
+  autoclear: false,
   
   didInsertElement() {
-    this.$().mask(this.get("mask"), {placeholder: this.get("placeholder")});
+    this.$().mask(this.get("mask"), { 
+      placeholder: this.get("placeholder"),
+      autoclear: this.get("autoclear"),
+      completed: this.completed.bind(this)
+    });
   },
   
+  completed() {
+    this.sendAction("inputReady");
+  }
 });
