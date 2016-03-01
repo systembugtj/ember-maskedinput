@@ -9,5 +9,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{mask-input}}`);
 
-  assert.equal(this.$().text().trim(), '', "shoul render with yields");
+  assert.equal(this.$().text().trim(), '', "shoul not render with yields");
 });
