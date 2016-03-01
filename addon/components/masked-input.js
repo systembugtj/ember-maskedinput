@@ -1,16 +1,15 @@
 import Ember from 'ember';
-import layout from '../templates/components/masked-input';
 
 export default Ember.TextField.extend({
   
   mask: "9999 9999",
   tagName: "input",
-  placeholder: "-",
+  maskholder: "-",
   autoclear: false,
   
   didInsertElement() {
     this.$().mask(this.get("mask"), { 
-      placeholder: this.get("placeholder"),
+      placeholder: this.get("maskholder"),
       autoclear: this.get("autoclear"),
       completed: this.completed.bind(this)
     });

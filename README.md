@@ -27,7 +27,7 @@ npm install ember-maskedinput --save
 ### masked-input
 
 ```hbs
-{{masked-input placeholder="" mask="999 9999" autoclear="false"}}
+{{masked-input maskholder="#" mask="999 9999" autoclear="false"}}
 ```
 
 

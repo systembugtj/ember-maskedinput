@@ -1,6 +1,6 @@
 {
   "name": "ember-maskedinput",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A ember component wrapper of jquery.maskedinput",
   "directories": {
     "doc": "doc",
