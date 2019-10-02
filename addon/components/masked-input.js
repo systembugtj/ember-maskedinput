@@ -8,7 +8,7 @@ export default Ember.TextField.extend({
   
   didInsertElement() {
     this._super(...arguments);
-    this.$().mask(this.get("mask"), { 
+    this.element.addEventListener(this.get("mask"), { 
       placeholder: this.get("maskholder"),
       autoclear: this.get("autoclear"),
       completed: this.completed.bind(this)

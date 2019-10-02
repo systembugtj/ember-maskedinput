@@ -1,13 +1,15 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render, find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('masked-input', 'Integration | Component | masked input', {
-  integration: true
-});
+module('Integration | Component | masked input', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
+  test('it renders', async function(assert) {
 
-  this.render(hbs`{{mask-input}}`);
+    await render(hbs`{{mask-input}}`);
 
-  assert.equal(this.$().text().trim(), '', "shoul not render with yields");
+    assert.equal(find('*').textContent.trim(), '', "shoul not render with yields");
+  });
 });
